@@ -4,11 +4,11 @@
     "exclude": ["src/figma/icons/*"],
     "parser": "react",
     "importPaths": {
-      "ui/compositions/**/*": "sds/compositions",
-      "ui/icons/*": "sds/icons",
-      "ui/images/*": "sds/images",
-      "ui/layout/**/*": "sds/layout",
-      "ui/primitives/**/*": "sds/primitives"
+      "ui/compositions/**/*": "compositions",
+      "ui/icons/*": "icons",
+      "ui/images/*": "images",
+      "ui/layout/**/*": "layout",
+      "ui/primitives/**/*": "primitives"
     },
     "paths": {
       "compositions": ["src/ui/compositions"],
