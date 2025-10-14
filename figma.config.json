@@ -11,14 +11,14 @@
       "ui/primitives/**/*": "sds/primitives"
     },
     "paths": {
-      "compositions": ["src/ui/compositions"],
-      "hooks": ["src/ui/hooks"],
-      "icons": ["src/ui/icons"],
-      "images": ["src/ui/images"],
-      "layout": ["src/ui/layout"],
-      "primitives": ["src/ui/primitives"],
-      "providers": ["src/ui/providers"],
-      "utils": ["src/ui/utils"]
+      "sds/compositions": ["src/ui/compositions"],
+      "sds/hooks": ["src/ui/hooks"],
+      "sds/icons": ["src/ui/icons"],
+      "sds/images": ["src/ui/images"],
+      "sds/layout": ["src/ui/layout"],
+      "sds/primitives": ["src/ui/primitives"],
+      "sds/providers": ["src/ui/providers"],
+      "sds/utils": ["src/ui/utils"]
     },
     "documentUrlSubstitutions": {
       "<FIGMA_ICONS_BASE>": "https://figma.com/design/dn0i7ZPmDStqPgQCddyqba",
