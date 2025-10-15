@@ -1,6 +1,6 @@
 {
   "name": "sds-library",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Simple Design System - A comprehensive React-based design system with Figma integration",
   "type": "module",
   "main": "dist/index.es.js",
