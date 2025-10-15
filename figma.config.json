@@ -4,7 +4,7 @@
     "exclude": ["src/figma/icons/*"],
     "parser": "react",
     "importPaths": {
-      "*": "@ds/sds"
+      "*": "sds-package"
     },
     "paths": {
       "compositions": ["src/ui/compositions"],
