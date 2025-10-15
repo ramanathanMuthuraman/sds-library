@@ -15,9 +15,58 @@ Whether you’re looking to use SDS to start a new project, or are looking for e
 
 ## Setup
 
+### Development
+
 - `npm i` to install dependencies
 - `npm run app:dev` will run server at [localhost:8000](http://localhost:8000) which renders contents of [App.tsx](src/App.tsx)
 - `npm run storybook` to start storybook at [localhost:6006](http://localhost:6006)
+
+### Building for Distribution
+
+- `npm run build:lib` creates an optimized production build in the `dist` folder including:
+  - ES modules bundle (`dist/sds.es.js`)
+  - CSS bundle with all styles (`dist/sds-package.css`)
+  - Chunked modules for better code splitting:
+    - `primitives-[hash].js` - base components (buttons, inputs, etc.)
+    - `compositions-[hash].js` - complex components (cards, forms, etc.)
+    - `layout-[hash].js` - layout components (flex, grid, etc.)
+    - `icons-[hash].js` - icon components
+  - Source maps for all JavaScript files
+
+### Using the Package
+
+After building, you can use the package in your project:
+
+```bash
+npm install sds-package
+```
+
+```jsx
+// Import components
+import { Button, Flex, Section } from "sds-package";
+// Import styles
+import "sds-package/style";
+
+// Use components
+function App() {
+  return (
+    <Section padding="1600">
+      <Flex gap="400">
+        <Button variant="primary">Primary Button</Button>
+        <Button variant="neutral">Neutral Button</Button>
+      </Flex>
+    </Section>
+  );
+}
+```
+
+The package includes:
+
+- React components built on React Aria Components for accessibility
+- CSS variables for theming
+- Code-split modules for optimized loading
+- Source maps for better debugging
+- CSS bundled separately for flexible styling
 
 ### Figma Auth
 
