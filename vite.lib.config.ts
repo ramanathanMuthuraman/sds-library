@@ -25,7 +25,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/ui/index.ts"),
       name: "SDS",
-      fileName: (format) => `sds.${format}.js`,
+      fileName: (format) => `index.${format}.js`,
       formats: ["es"],
     },
     rollupOptions: {
@@ -36,6 +36,9 @@ export default defineConfig({
         "react-aria-components",
       ],
       output: {
+        assetFileNames: () => {
+          return "index.css";
+        },
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
@@ -53,7 +56,6 @@ export default defineConfig({
     sourcemap: true,
     // Ensure CSS is included in the bundle
     cssCodeSplit: false,
-    // Copy CSS files to dist
     copyPublicDir: false,
   },
 });

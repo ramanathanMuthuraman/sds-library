@@ -24,8 +24,8 @@ Whether you’re looking to use SDS to start a new project, or are looking for e
 ### Building for Distribution
 
 - `npm run build:lib` creates an optimized production build in the `dist` folder including:
-  - ES modules bundle (`dist/sds.es.js`)
-  - CSS bundle with all styles (`dist/sds-package.css`)
+  - ES modules bundle (`dist/index.es.js`)
+  - CSS bundle with all styles (`dist/index.css`)
   - Chunked modules for better code splitting:
     - `primitives-[hash].js` - base components (buttons, inputs, etc.)
     - `compositions-[hash].js` - complex components (cards, forms, etc.)
@@ -35,7 +35,7 @@ Whether you’re looking to use SDS to start a new project, or are looking for e
 
 ### Using the Package
 
-After building, you can use the package in your project:
+After installing, you can use the package in your project:
 
 ```bash
 npm install sds-package

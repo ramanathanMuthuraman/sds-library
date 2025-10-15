@@ -1,18 +1,17 @@
 {
   "name": "sds-package",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Simple Design System - A comprehensive React-based design system with Figma integration",
   "type": "module",
-  "main": "dist/sds.es.js",
-  "module": "dist/sds.es.js",
-  "style": "dist/sds.css",
+  "main": "dist/index.es.js",
+  "module": "dist/index.es.js",
+  "style": "dist/index.css",
   "exports": {
     ".": {
-      "types": "./dist/types/ui/index.d.ts",
-      "import": "./dist/sds.es.js",
-      "default": "./dist/sds.es.js"
+      "import": "./dist/index.es.js",
+      "default": "./dist/index.es.js"
     },
-    "./style": "./dist/sds.css",
+    "./style": "./dist/index.css",
     "./package.json": "./package.json"
   },
   "types": "./dist/types/ui/index.d.ts",
