@@ -1,5 +1,5 @@
 {
-  "name": "sds-package",
+  "name": "sds-lbrary",
   "version": "0.1.2",
   "description": "Simple Design System - A comprehensive React-based design system with Figma integration",
   "type": "module",
@@ -79,10 +79,6 @@
     "typescript": "^5.0.2",
     "vite": "^6.3.5"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ram-ui-dev/custom-sds.git"
-  },
   "keywords": [
     "react",
     "design-system",
@@ -91,12 +87,7 @@
     "accessibility",
     "figma"
   ],
-  "author": "Ram UI Dev",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ram-ui-dev/custom-sds/issues"
-  },
-  "homepage": "https://github.com/ram-ui-dev/custom-sds#readme",
   "publishConfig": {
     "access": "public"
   }

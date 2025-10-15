@@ -38,14 +38,14 @@ Whether you’re looking to use SDS to start a new project, or are looking for e
 After installing, you can use the package in your project:
 
 ```bash
-npm install sds-package
+npm install sds-lbrary
 ```
 
 ```jsx
 // Import components
-import { Button, Flex, Section } from "sds-package";
+import { Button, Flex, Section } from "sds-lbrary";
 // Import styles
-import "sds-package/style";
+import "sds-lbrary/style";
 
 // Use components
 function App() {
